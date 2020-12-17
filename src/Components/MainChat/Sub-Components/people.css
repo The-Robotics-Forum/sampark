@@ -1,0 +1,13 @@
+.mainbody{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+
+.imgs{
+max-height: 60px;
+max-width: 60px;
+}
+
+

@@ -1,0 +1,136 @@
+html {
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+
+}
+.auth-page {
+  width: 100%;
+  height: 100vh;
+  top: -20px;
+  left: 0px;
+  
+  display: flex;
+}
+
+.left,
+.right {
+  flex: 50%;
+}
+
+.left{
+  background-image: url(../Assests/Images/leftImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon-section-auth img {
+  width: 23%;
+}
+.icon-section-auth {
+  /* position: fixed; */
+  z-index: 1;
+  margin-bottom: -10;
+}
+
+.welcome-text {
+  text-align: center;
+  margin-top: 30%;
+}
+.welcome-text p {
+  margin-bottom: 0.2rem;
+}
+
+.welcome-text-title {
+  font-size: 3.5rem;
+  font-family: "SegoeUI-Semibold";
+  color: white;
+}
+.welcome-text-subtitle {
+  font-size: 1.8rem;
+  /* font-family: "SegoeUI-Regular"; */
+  color: white;
+}
+
+/* Now the right side components */
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 6rem;
+}
+.form input::placeholder {
+  text-align: center;
+}
+.formclass{
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 4re
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-family: "SegoeUI-Bold";
+  margin-bottom: 3rem;
+}
+
+.form-subtitle {
+  font-family: "SegoeUI-Semibold";
+  margin-bottom: 4rem;
+}
+
+#room-id, #email, #password, #username {
+    width: 50%;
+    padding: 0.5rem;
+    margin: 0 auto;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-submit {
+    margin: 0 auto;
+    width: 40%;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 5px;
+    color: white;
+    font-family: "SegoeUI-Semibold";
+    background-color: #4688F0;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+.form-submit-new {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 575.98px) { 
+  .form-title{
+    font-size:2.0rem !important;
+  }
+  .form-subtitle{
+    font-size: 1.0rem !important;
+  }
+  .form{
+    padding: 7rem 2.5rem !important;
+  }
+  .right{
+    background-image: url(../Assests/Images/leftImage.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    color: whitesmoke;
+  }
+  a{
+    color:#3cf510 !important;
+  }
+  .left{
+    display: none !important;
+  }
+  .footer{
+    display: none !important;
+  }
+  #room-id, #email, #password, #username{
+    width:75% !important
+  }
+}

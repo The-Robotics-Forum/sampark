@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "HelveticaNeue-Light";
+  src: local("HelveticaNeue-Light"),
+    url(./Assests/Fonts/HelveticaNeue-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "HelveticaNeue-Medium";
+  src: local("HelveticaNeue-Medium"),
+    url(./Assests/Fonts/HelveticaNeue-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Semibold";
+  src: local("SegoeUI-Semibold"),
+    url(./Assests/Fonts//SegoeUI-Semibold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Regular";
+  src: local("SegoeUI-Semibold"),
+    url(./Assests/Fonts/SegoeUI-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Bold";
+  src: local("SegoeUI-Bold"),
+    url(./Assests/Fonts/SegoeUI-Bold.ttf) format("truetype");
+}

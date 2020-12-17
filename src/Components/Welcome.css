@@ -1,0 +1,130 @@
+.welcome-background {
+    width:100%;
+    height:100vh;
+    top:0px;
+    left:0px;
+    background-image: url(../Assests/Images/WelcomePageBackground.jpg);
+    background-size: cover;
+}
+
+.background-image{
+    width: 100%;
+}
+
+.icon-section-welcome img{
+    width: 10%;
+}
+.icon-section-welcome {
+    /* position: fixed; */
+    z-index: 1;
+    margin-bottom: -10;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.content-right{
+    /* position: fixed; */
+    z-index: 10;
+    margin-right: 2rem;
+    margin-left: 50%
+}
+
+.content-right p {
+    font-family: "HelveticaNeue-Light";
+    font-size: 2.5rem;
+    margin: 0 auto;
+}
+
+.title-description pre{
+    font-family: "HelveticaNeue-Medium";
+    font-size: 2.5rem;
+    margin: 0.5rem auto;
+    font-weight: 400;
+}
+
+.button-section {
+    /* position: fixed; */
+    z-index: 10;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.spacer {
+    flex: 1
+}
+
+.button-section button{
+    margin: auto 1rem;
+    background-color: #485896;
+    padding: 1.2rem 1.1rem;
+    border: none;
+    color: white;
+    font-family: "HelveticaNeue-Light";
+    font-size: 1.2rem;
+    border-radius: 5px;
+} 
+.button-section button:hover{
+    cursor: pointer;
+}
+
+.footer {
+    bottom: 0;
+    height: 6%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+    background-color: white;
+    border: solid 1px;
+    box-shadow: -1px -1px 2px grey;;
+}
+.bottom-icon{
+    margin: auto 0;
+    margin-left: 1rem
+}
+
+.footer-contents {
+    margin-right: 3rem; 
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 575.98px) { 
+    .content-right{
+        margin-left: auto !important;
+        margin-top:30% !important;
+        text-align: center !important;
+    }
+    .title-description pre{
+        font-size:1.1rem !important;
+        color:#ccece8;
+        
+    }
+    .welcome-background{
+        background-image: url(../Assests/Images/leftImage.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        color: whitesmoke !important;
+      }
+      .content-right p {
+          font-size: 2rem;
+          
+      }
+      .button-section{
+          margin-top: 2rem !important;
+          margin-left: 10% !important;
+      }
+      button{
+        width:120px !important;
+    
+        text-align:center !important;
+        line-height:1.1em !important;
+        font-size:1.1em !important;
+      }
+}
