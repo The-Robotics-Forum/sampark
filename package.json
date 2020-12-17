@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm i pino-tee -g && node src/index.js | pino-tee warn ./warn-logs > ./all-log"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bad-words": "^3.0.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-pino-logger": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.17",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.8",
+    "pino": "^6.3.2",
+    "pino-tee": "^0.3.0",
+    "socket.io": "^2.3.0",
+    "socketio-wildcard": "^2.0.0",
+    "swagger-ui-express": "^4.1.4",
+    "validator": "^13.0.0"
+  }
+}

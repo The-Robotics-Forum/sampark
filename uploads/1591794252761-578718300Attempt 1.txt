@@ -1,0 +1,36 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Scanner sc = new Scanner(System.in);
+        int t= sc.nextInt();
+        for(int q=0;q<t;q++)
+        {
+            int total=sc.nextInt();
+            int c=sc.nextInt();
+            int [] team= new int[total];
+            for(int i=0;i<total;i++)
+                team[i]=sc.nextInt();
+
+            Arrays.sort(team);
+            int ans= Integer.MAX_VALUE;
+            for(int i=0;i<=total-c;i++)
+            {
+                int cost=0;
+                int max= team[i+c-1];
+                for(int j=0;j<c;j++)
+                    cost+=(max-team[i+j]);
+
+                if(ans>cost)
+                    ans=cost;
+
+            }
+
+            System.out.println(ans);
+        }
+
+    }
+}
