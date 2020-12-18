@@ -23,7 +23,7 @@ const db=require("./db/mongoose.js")
 const chat= require("./socket/chat.js")
 const cors = require("cors")
 const errorHandler = require("./middlewares/errorHandler");
-var port = process.env.CHAT_APP_SERVICE_PORT || 8081
+var port = process.env.PORT || 8081
 var app=express()
 //db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
