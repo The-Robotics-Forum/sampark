@@ -8,6 +8,13 @@ Sampark uses both HTTP requests and webscokets in its application.  HTTP is used
 1) Good understanding for `express.js`,`mongoose` and `node` is important.
 2) Basic understanding of `socket.io` is required, Don't worry `socket.io` is a simple node module, learning it will not require lot of efforts, just visit [socket.io website](https://socket.io/get-started/chat/) ones.
 
+## How to run the code Locally
+1) Fork the Repository
+2) Checkout to the `backend-master` branch.
+3) If running locally run,open terminal and type `npm run dev`, this will use nodemon, which automatically restarts server upon any changes in files.(Not recomended when using low configuration as it this is heavy in process load).
+3) For deployment , open terminal and type `npm start`.
+4) The server will start on 8081 by default, you can set a custom port by set a environment variable of name `PORT`.
+
 
 ## Contribution Guidelines
 
