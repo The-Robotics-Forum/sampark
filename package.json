@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm i pino-tee -g && node src/index.js | pino-tee warn ./warn-logs > ./all-log"
+    "start": "node src/index.js | pino-tee warn ./warn-logs > ./logs/all-log",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +27,8 @@
     "socketio-wildcard": "^2.0.0",
     "swagger-ui-express": "^4.1.4",
     "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
