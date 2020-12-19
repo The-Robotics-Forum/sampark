@@ -1,6 +1,6 @@
 # Samparak
 ### Deployed app here:
-`https://sampark-frontend.herokuapp.com/`
+[https://sampark-frontend.herokuapp.com/](https://sampark-frontend.herokuapp.com/)
 
 ## What the Project is?
 Sampark is an open source team chat platform, which provides capabilies similar to slack. The Project is built using MERN Stack and Socket.io.
