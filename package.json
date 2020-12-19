@@ -29,7 +29,7 @@
     "socket.io-client": "^2.3.0"
   },
   "scripts": {
-    "start": "set PORT=8080 && http-server build",
+    "start": "http-server build",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
