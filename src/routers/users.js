@@ -77,7 +77,7 @@ app.post("/signup", async (req,res, next)=>{
     }
 })
 app.post("/login", async (req,res,next)=>{
-    
+    console.log("Inside login")
     try{
      const  user = await User.findByCredentials(req.body.email,req.body.password)
      

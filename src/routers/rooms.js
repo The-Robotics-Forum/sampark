@@ -270,6 +270,7 @@ app.get("/rooms/:title/kick/:id",roomowner, async (req,res,next)=>{
 
 })
 app.get("/allRooms", auth, async (req,res,next)=>{
+    console.log("Inside allRooms")
     try{
         var search =req.query.search
         const titleRegex = new RegExp(search, 'i')

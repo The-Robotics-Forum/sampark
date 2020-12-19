@@ -3,6 +3,7 @@ const User= require("../models/user.js")
 
 
 const auth= async function(req,res,next){
+    console.log("Inside auth function")
 
     try{
         const token= req.header("Authorization").replace("Bearer","").trim()
