@@ -80,7 +80,7 @@ export function setAuthorizationToken(token) {
 export function getAllChannelMessages(roomName) {
     return dispatch => {
         return new Promise((resolve, reject) => {
-            return apiCall("GET", serverBaseURL + `/allMessages/${roomName}`)
+            return apiCall("GET",  `/allMessages/${roomName}`)
                 .then((channels) => {
                     console.log(channels)
                     let listOfChannels = [];
@@ -108,7 +108,7 @@ export function getAllChannelMessages(roomName) {
 export function getAllDirectMessages(roomName) {
     return dispatch => {
         return new Promise((resolve, reject) => {
-            return apiCall("GET", serverBaseURL + `/allDirectMessages/${roomName}`)
+            return apiCall("GET",  `/allDirectMessages/${roomName}`)
                 .then((userConversations) => {
                     console.log(userConversations)
                     let listOfUsers = [];
@@ -138,7 +138,7 @@ export function uploadFile(file, fileName, callback) {
     return dispatch => {
         return new Promise(async (resolve, reject) => {
             try {
-                const response = await apiCall("POST", serverBaseURL + `/upload`, formData);
+                const response = await apiCall("POST",  `/upload`, formData);
                 callback(response.address);
                 resolve();
             }
@@ -161,7 +161,7 @@ export function downloadFile(fileAddress, callback) {
     return dispatch => {
         return new Promise(async (resolve, reject) => {
             try {
-                const file = await axios.post(serverBaseURL + '/download', data, {
+                const file = await axios.post( '/download', data, {
                     headers: headers
                   })
                 callback(file);
@@ -179,7 +179,7 @@ export function downloadFile(fileAddress, callback) {
 export function getMembers(roomName) {
     return dispatch => {
         return new Promise((resolve, reject) => {
-            return apiCall("get", `${serverBaseURL}/rooms/${roomName}/members`, null)
+            return apiCall("get", `/rooms/${roomName}/members`, null)
                 .then((members) => {
                     dispatch(roomMembers(members))
                     dispatch(removeError())
@@ -199,7 +199,7 @@ export function removeUser(title,name, callback) {
     return dispatch => {
       return new Promise(async (resolve, reject) => {
         try {
-          const members = await apiCall("get", `${serverBaseURL}/rooms/${title}/kick/${name}`,null);
+          const members = await apiCall("get", `/rooms/${title}/kick/${name}`,null);
           dispatch(removeError());
           callback();
           resolve();

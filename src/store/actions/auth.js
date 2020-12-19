@@ -137,8 +137,8 @@ export function authUser(type, userData) {
   return dispatch => {
     // wrap our thunk in a promise so we can wait for the API call
     return new Promise((resolve, reject) => {
-      console.log(`${serverBaseURL}${type}`)
-      return apiCall("post", `${serverBaseURL}${type}`, userData)
+      console.log(`/${type}`)
+      return apiCall("post", `/${type}`, userData)
         .then(({ token, ...user }) => {
           localStorage.setItem("jwtToken", token);
           console.log(user)
@@ -160,7 +160,7 @@ export function updateUser(userData) {
     return new Promise(async (resolve, reject) => {
       try {
         console.log("then");
-        const { token, ...user } = await apiCall("patch", `${serverBaseURL}/users`, userData);
+        const { token, ...user } = await apiCall("patch", `/users`, userData);
         dispatch(setCurrentUser(user));
         dispatch(removeError());
         resolve();
@@ -178,7 +178,7 @@ export function getCurrentUser() {
   return dispatch => {
     return new Promise(async (resolve, reject) => {
       try {
-        const userDetails = await apiCall("get", `${serverBaseURL}/me`, null);
+        const userDetails = await apiCall("get", `/me`, null);
         dispatch(setCurrentUser(userDetails));
         console.log(userDetails)
         dispatch(removeError());
@@ -198,13 +198,14 @@ export function getAllRoomsOfUser() {
   return dispatch => {
     return new Promise(async (resolve, reject) => {
       try {
-        const allRooms = await apiCall("get", `${serverBaseURL}/allRooms`, null);
+        const allRooms = await apiCall("get", `/allRooms`, null);
         console.log(allRooms)
         dispatch(setAllRoomsOfUser(allRooms))
-        dispatch(roomLoadingComplete());
         resolve();
+        dispatch(roomLoadingComplete());
       }
       catch (err) {
+        dispatch(roomLoadingComplete());
         reject();
       }
     })
@@ -215,13 +216,14 @@ export function getAllPublicRooms() {
   return dispatch => {
     return new Promise(async (resolve, reject) => {
       try {
-        const allPublicRooms = await apiCall("get", `${serverBaseURL}/allRoomsDb`, null);
+        const allPublicRooms = await apiCall("get", `/allRoomsDb`, null);
         console.log(allPublicRooms);
         dispatch(setAllPublicRooms(allPublicRooms));
         dispatch(publicRoomsLoadingComplete());
         resolve();
       }
       catch (err) {
+        dispatch(publicRoomsLoadingComplete());
         reject();
       }
     })
@@ -233,7 +235,7 @@ export function joinPublicRoom(roomName) {
     return new Promise(async (resolve, reject) => {
       try {
         dispatch(joiningNewRoom())
-        const roomObject = await apiCall("post", `${serverBaseURL}/rooms/${roomName}/join`, null);
+        const roomObject = await apiCall("post", `/rooms/${roomName}/join`, null);
         // dispatch(initRoom(roomObject.title))
         dispatch(joinedRoom(roomObject))
         resolve();
@@ -256,7 +258,7 @@ export function updateChannel(channelData) {
     return new Promise(async (resolve, reject) => {
       try {
         console.log(channelData)
-        const channel = await apiCall("patch", `${serverBaseURL}/room/${title}/channels/${oldName}`, channelData);
+        const channel = await apiCall("patch", `/room/${title}/channels/${oldName}`, channelData);
         // A new action is dispatched for updating the channel within the redux
         dispatch(setChannel(oldName, newName, newDescription))
         dispatch(removeError());
@@ -275,7 +277,7 @@ export function deleteChannel(title, name) {
   return dispatch => {
     return new Promise(async (resolve, reject) => {
       try {
-        const channel = await apiCall("delete", `${serverBaseURL}/room/${title}/channels/${name}`, null);
+        const channel = await apiCall("delete", `/room/${title}/channels/${name}`, null);
         dispatch(delChannel(name))
         dispatch(removeError());
         resolve();
@@ -293,7 +295,7 @@ export function createChannel(channelData) {
   return dispatch => {
     return new Promise(async (resolve, reject) => {
       try {
-        const channel = await apiCall("post", `${serverBaseURL}/channels/${title}`, channelData);
+        const channel = await apiCall("post", `/channels/${title}`, channelData);
         console.log(channel)
         let newChannelObj= {
           name : channel.title,
@@ -320,7 +322,7 @@ export function updateRoom(title, roomData) {
   return dispatch => {
     return new Promise(async (resolve, reject) => {
       try {
-        const room = await apiCall("patch", `${serverBaseURL}/rooms/${title}`, roomData);
+        const room = await apiCall("patch", `/rooms/${title}`, roomData);
         dispatch(removeError());
         return resolve(room);
       }
@@ -336,7 +338,7 @@ export function deleteRoom(title) {
   return dispatch => {
     return new Promise(async (resolve, reject) => {
       try {
-        const channel = await apiCall("delete", `${serverBaseURL}/rooms/${title}`, null);
+        const channel = await apiCall("delete", `/rooms/${title}`, null);
         dispatch(getAllPublicRooms())
         dispatch(getAllRoomsOfUser())
         dispatch(removeError());
@@ -356,7 +358,7 @@ export function createRoom(roomData) {
     return new Promise(async (resolve, reject) => {
       try {
         dispatch(roomLoadingStarted())
-        await apiCall("post", `${serverBaseURL}/rooms/`, roomData);
+        await apiCall("post", `/rooms/`, roomData);
         dispatch(getAllRoomsOfUser());
         dispatch(roomLoadingComplete())
         resolve();
@@ -374,7 +376,7 @@ export function makeModerator(title, username, callback) {
   return dispatch => {
     return new Promise(async (resolve, reject) => {
       try {
-        const moderator = await apiCall("post", `${serverBaseURL}/room/${title}/moderator/${username}`, null);
+        const moderator = await apiCall("post", `/room/${title}/moderator/${username}`, null);
         dispatch(removeError());
         callback();
         resolve();
