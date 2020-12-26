@@ -21,3 +21,7 @@ You can find the source code for front end in frontend branch of this repo and s
 1) For Contributing to backend, you should be familar with basics of node.js and socket.io and you are good to go.
 2) For Contributing to frontend, you should have understanding of basics of Javascript, React and Redux.
 3) Join your [Gitter channel]( https://gitter.im/The-Robotics-Forum/samparak?utm_source=share-link&utm_medium=link&utm_campaign=share-link ) , to get connected with the mentors. feel free to ask us questions and even if you wnat to suggest a new feature which the platform lacks.
+
+## Want to Contribute 🙋‍♂️?
+
+Awesome! If you want to contribute to this project, you're always welcome! See [Contributing Guidelines](CONTRIBUTING.md). You can also take a look at [Sampark's Project Status Tracker](https://github.com/The-Robotics-Forum/sampark/issues) for getting more information about current or upcoming tasks.
