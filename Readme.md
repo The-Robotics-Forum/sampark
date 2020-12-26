@@ -12,8 +12,7 @@
 <img src = ".logo/sampark%20banner.png">
 </p>
 <p align="center">
-<h3>Android App | TRF Level 1 Workshop</h3>
-<h4>Netra is the Android Application that TRF uses for Level 1 Workshop.</h4>
+<h3>Web Application</h3>
 </p>
 
 [![Join the chat at https://gitter.im/The-Robotics-Forum/samparak](https://badges.gitter.im/The-Robotics-Forum/samparak.svg)](https://gitter.im/The-Robotics-Forum/samparak?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
