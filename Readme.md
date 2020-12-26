@@ -1,4 +1,20 @@
-# Samparak
+<div>
+  <p>
+    <img align="left" src=".logo/The%20Robotic%20Forum%20Logo.jpg" alt="TRF_logo">
+    <img align="right" src=".logo/ROBOSOFT.png" alt="RoboSoft_logo" height = "200px">
+  </p>
+</div>
+<br><br><br><br><br><br><br><br><br>
+
+
+
+<p align="center">
+<img src = "https://github.com/avinash14022002/netra/blob/develop/.logo/sampark%20banner.png">
+</p>
+<p align="center">
+<h3>Android App | TRF Level 1 Workshop</h3>
+<h4>Netra is the Android Application that TRF uses for Level 1 Workshop.</h4>
+</p>
 [![Join the chat at https://gitter.im/The-Robotics-Forum/samparak](https://badges.gitter.im/The-Robotics-Forum/samparak.svg)](https://gitter.im/The-Robotics-Forum/samparak?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ### Deployed app here:
 [https://sampark-frontend.herokuapp.com/](https://sampark-frontend.herokuapp.com/)
