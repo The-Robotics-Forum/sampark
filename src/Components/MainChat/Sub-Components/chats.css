@@ -1,0 +1,292 @@
+.chat-area {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+  height: 100vh;
+}
+
+.chat-list {
+  flex: 3;
+  position: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-box {
+  flex: 7;
+  height: 100%;
+  /* display: flex; */
+  position: inherit;
+  align-items: center;
+  padding-top: 5.7rem;
+  /* overflow: hidden; */
+}
+
+.chat-list-subtitle {
+  font-family: "SegoeUI-Semibold";
+  margin-top: 2rem;
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  color: #646567;
+  width: 100%;
+}
+
+.channel-list {
+  background-color: white;
+  border: 1px solid black;
+  flex: 1;
+  margin-top: 2rem;
+  /* border-radius: 14px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 75%;
+  max-height: 100%;
+
+  overflow-y: auto;
+}
+
+.channel-list-header {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-family: "HelveticaNeue-Medium";
+  color: #636363;
+  font-size: 1.4rem;
+}
+
+.channel-list-header:hover {
+  cursor: pointer;
+}
+
+.channel-list-ul {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid grey;
+  margin-bottom: 0;
+  font-family: "HelveticaNeue-Medium";
+  font-size: 1.2em;
+  color: #636363;
+}
+.first {
+  border-top: 0.5px solid grey;
+}
+
+.channel-list-ul:hover {
+  background-color: #c6e6ec;
+  cursor: pointer;
+}
+
+/* ***********CHAT-BOX*********** */
+
+.chat-area-border {
+  border: 1px solid black;
+  /* border-radius: 14px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 100%;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.chat-header {
+  border-bottom: 1px solid black;
+  padding-left: 1.7rem;
+  min-height: 9%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-name {
+  flex: 1;
+  font-family: "HelveticaNeue-Medium";
+  font-size: 1.4rem;
+}
+
+.chat-description {
+  flex: 1;
+  font-family: "HelveticaNeue-Light";
+}
+
+.chat-message {
+  /* height: 70%; */
+  flex: 1;
+  padding: 0 1rem;
+  overflow: auto;
+}
+
+.message {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem 0;
+  /* flex-direction: ; */
+}
+
+.options:hover {
+  cursor: pointer;
+}
+
+.message-area .spacer {
+  display: block;
+  /* transform: scale(0.5); */
+}
+
+.options {
+  display: block;
+}
+
+.dropdown {
+  transform: scale(0.8);
+}
+
+.message-area,
+.message-user,
+.message-content,
+.location-content {
+  width: fit-content;
+}
+
+.location-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
+}
+
+.location-content img {
+  width: 40%;
+}
+.location-content a {
+  width: fit-content;
+}
+
+.file-area .message-content:hover {
+  cursor: pointer;
+}
+
+.message-area {
+  background-color: rgb(138, 138, 240);
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.message-user {
+  font-size: 0.8rem;
+  font-family: "HelveticaNeue-Light";
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+}
+
+
+
+.current-user {
+  border-bottom-right-radius: 0px;
+  /* background-color: ; */
+}
+.current-user .message-user {
+  color: rgb(238, 238, 238);
+}
+
+.current-user .message-content {
+  color: white;
+}
+
+.other-user {
+  border-bottom-left-radius: 0px;
+  background-color: rgb(216, 216, 236);
+}
+
+.current-user .message-area {
+  color: black;
+}
+.code-area {
+  background-color: rgb(248, 247, 247);
+}
+
+/* NEW MESSAGE AREA */
+
+.new-message {
+  /* border-top: 1px solid black; */
+  background-color: rgb(240, 238, 238);
+  /* display: block; */
+  min-height: 4rem;
+  max-height: 10rem;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.2rem;
+}
+
+.message-options {
+  flex: 0.8;
+  display: flex;
+  flex-direction: row;
+}
+
+.message-text {
+  flex: 8.7;
+  margin-right: 1rem;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.message-time {
+  font-size: 0.8rem;
+}
+
+.message-text .MuiTextField-root {
+  width: 100%;
+  /* height: 90%; */
+  border-radius: 10px;
+}
+
+.message-text .MuiOutlinedInput-multiline {
+  min-height: 3rem;
+}
+
+.send-button {
+  flex: 0.7;
+  border: none;
+  background-color: rgb(130, 130, 247);
+  height: 2rem;
+  color: white;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+/* .send-button:hover{
+  cursor: pointer;
+} */
+
+/* ATTACHMENT AREA */
+.attach-button {
+  border: none;
+  /* background-color: rgb(79, 79, 245); */
+  margin: auto;
+  color: white;
+  /* padding: 0.2rem; */
+}
+
+
+@media (max-width: 800px) {
+  .chat-area {
+    flex-direction: column;
+  }
+  .chat-list {
+    height: 400px;
+  }
+}
+
+/* @media (max-height: 600px) {
+  .outer-layout {
+    position: fixed;
+    overflow: scroll;
+  }
+} */

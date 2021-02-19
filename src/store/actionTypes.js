@@ -1,0 +1,33 @@
+export const ADD_ERROR = "ADD_ERROR";
+export const REMOVE_ERROR = "REMOVE_ERROR";
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+export const SET_ALL_ROOMS = "SET_ALL_ROOMS";
+export const ROOM_LOADING_COMPLETE = "ROOM_LOADING_COMPLETE";
+
+/* *****Chat Actions***** */
+export const NEW_MESSAGE = "NEW_MESSAGE";
+export const CHANGE_CONVERSATION = "CHANGE_COVERSATION";
+
+export const INIT_CHANNELS = "INIT_CHANNELS";
+export const INIT_USERS_CONVO = "INIT_USERS_CONVO";
+export const CHAT_LOADING_DONE = "CHAT_LOADING_DONE";
+export const DIRECTS_LOADING_DONE = "DIRECTS_LOADING_DONE";
+export const INIT_ROOM = "INIT_ROOM";
+export const INIT_PUBLIC_ROOMS = "INIT_PUBLIC_ROOMS";
+export const PUBLIC_ROOMS_LOADED = "PUBLIC_ROOMS_LOADED";
+export const JOINING_ROOM = "JOINING_ROOM";
+export const JOINED_ROOM = "JOINED_ROOM";
+export const ROOM_LOADING_START = "ROOM_LOADING_START";
+export const SET_ROOM_ERROR = "SET_ROOM_ERROR";
+// export const UPLOAD_FILE = "UPLOAD_FILE";
+// export const DOWLOAD_FILE = "DOWNLOAD_FILE";
+
+/*****Get Members */
+
+export const MEMBERS = "MEMBERS";
+
+export const CHANNEL_UPDATE = "CHANNEL_UPDATE"
+export const CHANNEL_DELETE = "CHANNEL_DELETE"
+export const CHANNEL_CREATE = "CHANNEL_CREATE"
+export const ROOM_DELETE = "ROOM_DELETE"
+export const ROOM_UPDATE = "ROOM_UPDATE"

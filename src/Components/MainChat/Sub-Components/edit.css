@@ -1,0 +1,65 @@
+.mainbody{
+    margin: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: space-evenly;
+}
+
+.formchannel{
+ text-align: center;
+display: flex;
+flex-direction: column;
+padding:2rem;
+margin: 1rem;
+max-width: 550px;
+}
+
+.formroom{
+    align-self: flex-start;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding:2rem;
+    margin: 1rem;
+    max-width: 550px;
+}
+
+.formroom >*{
+    margin-bottom: 1rem;
+}
+.formchannel >*{
+    margin-bottom: 1rem;
+}
+textarea{
+    resize: none;
+    columns: 2;
+}
+#ch > *{
+    margin: 0.2rem;
+}
+
+#rh > *{
+    margin: 0.2rem;
+}
+#rch > *{
+    margin: 0.2rem;
+}
+.textdiv{
+    display: inline;
+    text-align: center;
+}
+
+
+input[type=radio] {
+    transform: scale(1.5);
+    margin: 10px 0;
+}
+label{
+    transform: scale(1);
+    margin-left: 20px;
+}
+
+
+

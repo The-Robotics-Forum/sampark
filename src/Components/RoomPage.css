@@ -1,0 +1,112 @@
+.roompage {
+  top: -20px;
+  left: 0px;
+  background-image: url(../Assests/Images/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: space-around;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#9fa9cf;
+  padding-right: 3rem;
+}
+
+.profile img{
+  padding-top: 0.5rem;
+  width: 80%;
+  height: 90%;
+}
+
+.icon-section-auth img {
+  width: 23%;
+}
+.icon-section-auth {
+  /* position: fixed; */
+  z-index: 1;
+  margin-bottom: -10;
+}
+
+#roomlistdisp{
+  display: flex;
+  justify-content: space-between;
+}
+#proomlistdisp{
+  display: flex;
+  justify-content: space-between;
+}
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 4rem;
+}  
+.form-title {
+  font-size: 3rem;
+  font-family: "SegoeUI-Bold";
+  margin-bottom: 1rem;
+}
+
+.form-subtitle {
+  font-family: "SegoeUI-Semibold";
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+i{
+  color: blue;
+  font-weight:500;
+}
+
+#log{
+  color: white;
+}
+
+
+.form-submit {
+    margin: 0 auto;
+    width: 40%;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 5px;
+    color: white;
+    font-family: "SegoeUI-Semibold";
+    background-color: #4688F0;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.form-botton-text {
+  margin-bottom: 2rem;
+}
+
+.new-room {
+  border: none;
+}
+
+
+@media (max-width: 700px) {
+  .nav{
+      align-items: center;
+      justify-content: center;
+      padding-right: 0rem;
+  }
+}
+
+@media (max-width: 1700px) {
+    .verticalLine{
+      border-right: 0px solid rosybrown;
+    }
+  }
+
+    
+@media (min-width: 1900px) {
+  .verticalLine{
+    margin-right: 6rem;
+  }
+}
