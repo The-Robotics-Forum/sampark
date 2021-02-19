@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.244f8c97.chunk.css",
+    "main.js": "/static/js/main.7aa18702.chunk.js",
+    "main.js.map": "/static/js/main.7aa18702.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6fd1fea2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6fd1fea2.js.map",
+    "static/css/2.4819d237.chunk.css": "/static/css/2.4819d237.chunk.css",
+    "static/js/2.77f46e65.chunk.js": "/static/js/2.77f46e65.chunk.js",
+    "static/js/2.77f46e65.chunk.js.map": "/static/js/2.77f46e65.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a804c8349f396b6ae69599a35059ee29.js": "/precache-manifest.a804c8349f396b6ae69599a35059ee29.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.4819d237.chunk.css.map": "/static/css/2.4819d237.chunk.css.map",
+    "static/css/main.244f8c97.chunk.css.map": "/static/css/main.244f8c97.chunk.css.map",
+    "static/js/2.77f46e65.chunk.js.LICENSE.txt": "/static/js/2.77f46e65.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/SegoeUI-Semibold.5040e8da.ttf",
+    "static/media/Welcome.css": "/static/media/WelcomePageBackground.ce68ffb6.jpg",
+    "static/media/RoomPage.css": "/static/media/back.17e49a98.jpg",
+    "static/media/icon-logo-2.png": "/static/media/icon-logo-2.dc3cddb7.png",
+    "static/media/icon-logo.png": "/static/media/icon-logo.c4645077.png",
+    "static/media/AuthenticationPage.css": "/static/media/leftImage.c775c3c1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6fd1fea2.js",
+    "static/css/2.4819d237.chunk.css",
+    "static/js/2.77f46e65.chunk.js",
+    "static/css/main.244f8c97.chunk.css",
+    "static/js/main.7aa18702.chunk.js"
+  ]
+}
