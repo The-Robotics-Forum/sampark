@@ -13,11 +13,6 @@ function Home() {
             <Welcome {...multiRooms} />
             <Welcome {...messageAbuse} />
             <Welcome {...AbusingRules} />
-
-            {/* <DevelopersMain {...devOne} />
-            <DevelopersMain {...devTwo} />
-            <DevelopersMain {...devThree} /> */}
-
             <Welcome {...homeObjFour} />
         </>
     );

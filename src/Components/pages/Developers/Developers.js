@@ -9,11 +9,6 @@ import '../../DevelopersMain.css'
 
 function Developers(val) {
     return (
-        // <>
-        //     <DevelopersMain {...devOne} />
-        //     <DevelopersMain {...devTwo} />
-        //     <DevelopersMain {...devThree} />
-        // </>
         <>
             <div className="outerMostDiv">
                 <h2 className="postionHolders">Full-Stack Developers</h2>

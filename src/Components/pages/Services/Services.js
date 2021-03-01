@@ -11,7 +11,6 @@ function Services() {
             <Welcome {...multiRooms} />
             <Welcome {...messageAbuse} />
             <Welcome {...AbusingRules} />
-            {/* <Pricing /> */}
             <Welcome {...homeObjFour} />
         </>
     );
