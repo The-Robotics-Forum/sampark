@@ -38,6 +38,7 @@ function App() {
               <Route path="/" exact strict component={Home} />
               <Route path="/services" exact strict component={Services} />
               <Route path="/developers" exact strict component={Developers} />
+
               <Route path="/authenticate/:type" exact strict component={AuthenticationPage} />
               <Route path="/chat" exact strict component={MainChatWindow} />
               <Route path="/rooms" exact strict component={RoomPage} />
