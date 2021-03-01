@@ -1,6 +1,5 @@
 import React from 'react';
 import DevelopersMain from '../../DevelopersMain';
-// import {devOne, devTwo, devThree} from './Data';
 import FullStackData from './FullStackData';
 import FrontEndData from './FrontEndData';
 import BackEndData from './BackEndData';

@@ -5,7 +5,6 @@ import {homeObjFour, homeObjOne, homeObjThree, multiChatting, multiRooms, messag
 function Services() {
     return (
 <>
-            {/* <HeroSection {...homeObjOne} /> */}
             <Welcome {...homeObjThree} />
             <Welcome {...multiChatting} />
             <Welcome {...multiRooms} />

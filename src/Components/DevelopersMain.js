@@ -19,7 +19,6 @@ function DevelopersMain({
 }) {
     return (
         <>
-            
                     <div className="card">
                         <div className="contents">
                             <div className="imgBx"><img src={img} alt={alt}/></div>

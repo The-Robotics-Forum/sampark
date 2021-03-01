@@ -1,21 +1,9 @@
 import React from 'react';
 import { Button } from './Button'
 import { Link } from "react-router-dom";
-// import Icon from '../Assests/Images/icon-logo.png'
-// import FooterIcon from '../Assests/Images/single-icon.png';
-// import FacebookIcon from '../Assests/Images/facebook.png';
-// import TwitterIcon from '../Assests/Images/twitter.png';
 import './Welcome.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// export default function Welcome () {
-//     return (
-//         <div className="welcome-background">
-//             <div className="icon-section">
-//                 <img src={Icon} alt="logo"></img>
-//             </div>
-//         </div>
-//     )
-// }
+
 export default function Welcome({
     props,
     lightBg,

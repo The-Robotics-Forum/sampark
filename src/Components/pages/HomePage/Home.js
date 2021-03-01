@@ -1,9 +1,6 @@
 import React from 'react';
 import Welcome from '../../Welcome';
-// import DevelopersMain from "../../DevelopersMain";
 import {homeObjFour, homeObjOne, homeObjThree, multiChatting, multiRooms, messageAbuse, AbusingRules} from './Data';
-// import {devOne, devTwo, devThree} from '../Developers/Data';
-
 function Home() {
     return (
         <>
